@@ -1,38 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300&display=swa");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
 .App {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.recipeContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.recipe {
+  margin: 2vh 0 2vh 0;
+  background-color: black;
+}
+h1 {
+  word-wrap: normal;
+}
+
+.card {
+  max-width: 50vh;
+  min-width: 0;
+  background-color: rgb(46, 40, 40);
+}
+.input {
+  width: 50vw;
+}
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border: 2px solid rgb(17, 70, 216);
+}
+.searchBtn {
+  width: 10vw;
+}
+.background {
+  height: 80vh;
+  min-width: 100%;
+  /* background-image: url("./background.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(45deg, #2dfff5, rgb(103, 255, 15));
+  font-family: "Orbitron", sans-serif;
+}
+.logo {
+  height: 15vh;
+  width: 20vw;
+  animation: 2s ease infinite logo-spin;
+}
+.findMeOn {
+  width: 100%;
+  padding: 2vh 0 2vh 0;
+  background-color: rgb(31, 192, 255);
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-emphasis: bold;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fa-github {
+  margin-left: 4px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* justify-content: center; */
+  margin: auto;
+  min-height: 80%;
+  min-width: 100%;
+  color: rgb(0, 0, 0);
 }
 
-.App-link {
-  color: #61dafb;
+.searchField {
+  display: flex;
+  min-width: 100%;
+  /* justify-content: center; */
+  margin: auto;
+  align-content: center;
+  margin: 4vh 0% 0% 5%;
 }
-
-@keyframes App-logo-spin {
+.backgroundBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  margin: 3vh 2vw 3vh 2vw;
+  flex-wrap: wrap-reverse;
+}
+.media {
+  height: 60px;
+  width: 60px;
+}
+.share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.share-icon {
+  margin-left: 2vw;
+}
+@keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .input {
+    width: 70vw;
+  }
+  .share {
+    text-align: center;
+  }
+  .background {
+    height: 70vh;
+  }
+  .trending {
+    text-align: center;
+  }
+  .logo {
+    height: 12vw;
+    width: 25vw;
+  }
+  span {
+    display: none;
   }
 }

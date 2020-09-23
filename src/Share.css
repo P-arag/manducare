@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&family=Roboto+Mono:wght@300&display=swa");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+.Share {
+  width: 100vw;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.file {
+  height: 2vh;
+  width: 35vw;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.178);
+  border: 2px dotted black;
+}
+.Share-header {
+  background: linear-gradient(to left, rgb(100, 179, 231), rgb(82, 255, 59));
+  min-width: 100vw;
+  min-height: fit-content;
+  font-size: 2rem;
+  padding: 2vh 2vw 2vh 2vw;
+  font-family: "Roboto Mono", sans-serif;
+  display: block;
+  text-align: center;
+}
+.multiline {
+  width: 35vw;
+  min-height: 20vh;
+}
+
+.textfield {
+  /* background-color: lawngreen; */
+  width: 35vw;
+}
+.buttonControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+}
+.formData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 150vh;
+  padding: 2rem 0rem 2rem 0;
+  width: inherit;
+  background-color: rgba(0, 0, 0, 0.123);
+}
+
+@media only screen and (max-width: 600px) {
+  .textfield {
+    width: 60vw;
+  }
+  .multiline {
+    width: 60vw;
+  }
+  .buttonControl {
+    width: 50vw;
+  }
+  .file {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .textfield {
+    width: 70vw;
+  }
+  .multiline {
+    width: 70vw;
+  }
+  .file {
+    width: 70vw;
+  }
+}
+@media only screen and (min-height: 1000px) {
+  .formData {
+    height: 110vh;
+  }
+}
