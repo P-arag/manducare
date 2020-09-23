@@ -1,4 +1,4 @@
-# manducare
+# Manducare Latin for Eat
 ## A REACT website dedicated to foodies and Social media people!!
 ### Features
 1. Real time uploads
