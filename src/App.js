@@ -48,7 +48,7 @@ function Home() {
     });
   }, []);
   let getData = async (q) => {
-    let url = `https://api.edamam.com/search?q=${q}&app_id=9373167b&app_key=46134d9a64e9c26e7ffcc2cc26c63776&from=0&to=10&calories=591-722&health=alcohol-free`;
+    let url = `https://api.edamam.com/search?q=${q}&app_id=APP_ID&app_key=APP_KEY&health=alcohol-free`;
     let response = await fetch(url);
     let data = await response.json();
     setRecipies(data.hits);
